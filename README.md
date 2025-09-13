@@ -14,7 +14,7 @@ This project analyzes a Retail Sales dataset using SQL. The dataset contains inf
 
 ## Project Structure
 
-### 1.Database Setup 
+### 1. Database Setup 
  -- **Database Creation**:The project starts by creating a database named `Project1`
  -- **Table Creation**: A table named retail_sales_analysis is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
 
@@ -37,7 +37,7 @@ total_sale FLOAT NULL
 );
 ```
 
-### 2.Data Exploration & Cleaning
+### 2. Data Exploration & Cleaning
 -- **Record Count**: Determine the total number of records in the dataset.
 -- **Customer Count**: Find out how many unique customers are in the dataset.
 -- **Category count**: Identify all unique product categories in the dataset.
