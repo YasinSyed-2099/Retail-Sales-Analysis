@@ -82,7 +82,7 @@ WHERE sale_date IS NULL OR sale_time IS NULL OR customer_id IS NULL
 ### 3. Data Analysis & Findings
 The following SQL queries were developed to answer specific business questions:
 
-1.** Write a SQL query to retrieve all columns for sales made on '2022-11-05'.**:
+1.**Write a SQL query to retrieve all columns for sales made on '2022-11-05'.** :
 ```sql
 SELECT *
 FROM retail_sales_analysis
