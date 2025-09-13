@@ -102,7 +102,7 @@ WHERE
 3. **Write a SQL query to calculate the total sales (total_sale) for each category and total orders** :
 ```sql
 SELECT 
-	   category,
+	category,
     SUM(total_sale) AS Sales_amount,
     COUNT(*) AS Total_orders
 FROM retail_sales_analysis
@@ -113,7 +113,7 @@ GROUP BY 1
 4. **Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category** :
 ```sql
 SELECT 
-	category,
+ category,
  ROUND(AVG(age), 2) AS Average_age
  FROM retail_sales_analysis
 WHERE category = 'Beauty'
@@ -131,7 +131,7 @@ WHERE
 6. **Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category** :
 ```sql
 SELECT 
-	   category,
+	category,
     gender,
     COUNT(transactions_id) AS no_transaction
 FROM retail_sales_analysis
@@ -142,7 +142,7 @@ ORDER BY 1
 7. **Write a SQL query to calculate the average sale for each month. Find out best selling month in each year** :
 ```sql
 SELECT 
-	   Year,
+	Year,
     Month,
     ROUND(avg_total_sales , 2) AS total_avg_sales
 FROM
@@ -162,7 +162,7 @@ WHERE rnk = 1
 8. **Write a SQL query to find the top 5 customers based on the highest total sales** :
 ```sql
 SELECT 
-	   customer_id,
+	customer_id,
     SUM(total_sale) AS Total_sales
 FROM retail_sales_analysis
 GROUP BY customer_id
@@ -174,7 +174,7 @@ LIMIT 5
 9. **Write a SQL query to find the number of unique customers who purchased items from each category** :
 ```sql
 SELECT 
-	   category,
+	category,
     COUNT(DISTINCT(customer_id)) AS unique_customers
 FROM retail_sales_analysis
 GROUP BY 1
@@ -186,7 +186,7 @@ GROUP BY 1
 ```sql
 SELECT 
     CASE
-		      WHEN HOUR(sale_time)<= 12 THEN 'Morning'
+		WHEN HOUR(sale_time)<= 12 THEN 'Morning'
         WHEN HOUR(sale_time) BETWEEN 12 AND 17 THEN 'Afternoon'
         ELSE 'evening'
         END AS time_of_day,
@@ -199,7 +199,9 @@ GROUP BY 1
 
 
 ## Findings
+
 ## Reports
+
 ## Conclusion
 
 
